@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-gray-800">
-    <Navigation />
+  <Layout>
     <section class="bg-gray-900 pt-10">
       <VueSlickCarousel :dots="true" v-bind="slickOptions">
         <MoviePoster />
@@ -24,8 +23,8 @@
       <MovieList />
 
     </section>
-    <Footer />
-  </div>
+
+  </Layout>
 </template>
 
 <script>
@@ -33,7 +32,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import MovieList from '../components/MovieList.vue'
-import Footer from '../components/Footer.vue'
+import Layout from '../layout/layout.vue'
 export default {
   data() {
     return {
@@ -74,6 +73,6 @@ export default {
     }
   },
   name: 'IndexPage',
-  components: { VueSlickCarousel, MovieList, Footer },
+  components: { VueSlickCarousel, MovieList, Layout },
 }
 </script>
