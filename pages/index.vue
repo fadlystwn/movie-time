@@ -10,7 +10,7 @@
 
       </VueSlickCarousel>
     </section>
-    <section class="bg-gray-800 pt-10 container mx-auto">
+    <section class="bg-gray-800 pt-10 mx-5">
       <div class="flex justify-between">
         <h3 class="text-base">Discover Movies</h3>
         <div class="flex">
@@ -24,7 +24,7 @@
 
     </section>
 
-  </Layout>
+</Layout>
 </template>
 
 <script>
@@ -32,7 +32,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import MovieList from '../components/MovieList.vue'
-import Layout from '../layout/layout.vue'
+import Layout from '../layout/index.vue'
 export default {
   data() {
     return {
@@ -43,6 +43,7 @@ export default {
         speed: 500,
         slidesToShow: 1,
         scrollToShow: 3,
+        arrows: false,
         responsive: [
           {
             breakpoint: 1024,

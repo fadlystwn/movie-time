@@ -44,10 +44,10 @@
         </div>
       </div>
     </section>
-  </Layout>
+</Layout>
 </template>
 <script>
-import Layout from '../layout/layout.vue'
+import Layout from '../layout/index.vue'
 import MovieList from '../components/MovieList.vue'
 export default {
   components: { Layout, MovieList },
